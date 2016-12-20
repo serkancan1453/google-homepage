@@ -206,9 +206,21 @@ center {
     display: block;
     text-align: -webkit-center;
 }
+input[type="submit"]:hover {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-image: -o-linear-gradient(top,#f8f8f8,#f1f1f1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
 input[type="submit"] {
     height: 36px;
     line-height: 27px;
+        background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
     background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
     -webkit-border-radius: 2px;
     -webkit-user-select: none;
@@ -225,12 +237,18 @@ input[type="submit"] {
     padding: 0 16px;
     text-align: center;
 }
-input[type="submit" i] {
-    align-items: flex-start;
-    box-sizing: border-box;
+input {
     -webkit-appearance: push-button;
-    -webkit-user-select: none;
     white-space: pre;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    font: 13.3333px Arial;
+    -webkit-writing-mode: horizontal-tb;
 }
 .lga {
     height: 233px;
